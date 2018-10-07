@@ -107,12 +107,13 @@ If you are leaving your institution and need to convert your Dataverse account t
 
 .. Create a Dataverse account using ORCID
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+..
 .. #. Go to “Log In” in the upper right corner of Dataverse.
 .. #. Click the "ORCID" button under the "Other options" header.
 .. #. Click the "Log In with ORCID" button to go to the ORCID website.
 .. #. If you do not already have an ORCID account, you can create one on this page. If you already have an ORCID account, click on "Sign in" and then enter your login under the "Personal account" tab.
-.. #. After you put in your ORCID credentials successfully, you will be brought back to Dataverse to confirm the creation of your Dataverse account. If your ORCID account's privacy settings permit it, the email address you've linked to your ORCID account will be suggested to you as an option. You can use this email if you like, or you can use any other email you might wish. If you have entered employment information within your ORCID account, the name of your employer will be suggested for the .. "Affiliation" field.
+.. #. After you put in your ORCID credentials successfully, you will be brought back to Dataverse to confirm the creation of your Dataverse account. If your ORCID account's privacy settings permit it, the email address you've linked to your ORCID account will be suggested to you as an option. You can use this email if you like, or you can use any other email you might wish. If you have entered employment information within your ORCID account, the name of your employer will be suggested for the
+.. "Affiliation" field.
 
 .. Convert your Dataverse account to use ORCID for log in
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
