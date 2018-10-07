@@ -14,10 +14,7 @@ These guides are for the |version| version of Dataverse. To find guides belongin
   :maxdepth: 2
 
   user/index
-  admin/index
   api/index
-  installation/index
-  developers/index
   style/index
 
 How the Guides Are Organized
