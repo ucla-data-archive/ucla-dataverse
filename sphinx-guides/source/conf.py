@@ -56,8 +56,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Dataverse'
-copyright = u'%d, The President & Fellows of Harvard College' % datetime.now().year
+project = u'UCLA Dataverse'
+copyright = u'%d, UC Regents' % datetime.now().year
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -124,10 +124,10 @@ html_theme = 'bootstrap'
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
     # 'navbar_title': "Demo",
-    
+
     # Tab name for entire site. (Default: "Site")
     # 'navbar_site_name': "Site",
-    
+
     # A list of tuples containing pages or urls to link to.
     # Valid tuples should be in the following forms:
     #    (name, page)                 # a link to a page
@@ -142,11 +142,11 @@ html_theme_options = {
     'navbar_links': [
         ("View 3.6.2 Guides", "http://docs.dataverse.org/en/3.6.2/", True),
     ],
-    
+
     # Global TOC depth for "site" navbar tab. (Default: 1)
     # Switching to -1 shows all levels.
     'globaltoc_depth': -1,
-    
+
     # Include hidden TOCs in Site navbar?
     #
     # Note: If this is "false", you cannot have mixed ``:hidden:`` and
@@ -155,19 +155,19 @@ html_theme_options = {
     #
     # Values: "true" (default) or "false"
     'globaltoc_includehidden': "false",
-    
+
     # HTML navbar class (Default: "navbar") to attach to <div> element.
     # For black navbar, do "navbar navbar-inverse"
     'navbar_class': "navbar",
-    
+
     # Fix navigation bar to top of page?
     # Values: "true" (default) or "false"
     #'navbar_fixed_top': "true",
-    
+
     # Location of link to source.
     # Options are "nav" (default), "footer" or anything else to exclude.
     #'source_link_position': "nav",
-    
+
     # Bootswatch (http://bootswatch.com/) theme.
     #
     # Options are nothing with "" (default) or the name of a valid theme such
@@ -191,7 +191,7 @@ html_theme_options = {
     # * united
     # * yeti (v3 only)
     #'bootswatch_theme': "cupid",
-    
+
     # Choose Bootstrap version.
     # Values: "3" (default) or "2" (in quotes)
     'bootstrap_version': "3",
@@ -204,7 +204,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> Documentation".
-html_title = 'Dataverse.org'
+html_title = 'UCLA Dataverse'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
