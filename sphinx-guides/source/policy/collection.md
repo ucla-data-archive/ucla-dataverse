@@ -1,5 +1,11 @@
+Collection Policy
+================
 
-## Content
+.. contents:: |toctitle|
+	:local:
+
+Content
+-------
 
 * Scope: We allow all research artifacts created from research projects at UCLA  to be made publicly available, widely discoverable, linkable, and ultimately, reusable.  
 * Stage of research data:  Data from any stage of the research lifecycle is accepted
