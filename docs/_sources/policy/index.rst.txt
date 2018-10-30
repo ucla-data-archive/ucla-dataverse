@@ -12,4 +12,3 @@ UCLA Dataverse Policies
 
   tos
   collection
-  privacy
