@@ -19,7 +19,7 @@ DSC reserves the right, at its sole discretion, to modify or replace any of the 
 Privacy
 -------
 
-DSC's current Site Privacy Statement is incorporated into these Terms of Use. For inquiries in regard to DSC's Privacy Policy, or to report a privacy-related problem, please contact datascience+dvn@ucla.edu.
+UCLA Dataverse complies with the UC and UCLA  [privacy policies](https://privacy.ucla.edu/) that ensure the privacy of all users will be respected and protected in keeping with federal and state laws.
 
 Rules and Conduct
 -----------------

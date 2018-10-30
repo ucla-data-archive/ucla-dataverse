@@ -13,8 +13,8 @@ Content
 * Rights: By uploading content, no change of ownership is implied and no property rights are transferred to the UCLA Library. All uploaded content remains the property of the parties prior to submission
 * Data file formats: All formats are allowed - even preservation unfriendly. Dataverse will convert certain tabular data formats (Stata, XLS, R, SPSS) into plane-text tab delimited files.
 * Volume and size limitations: Total files size limit per record is 50GB. Higher quotas can be requested and granted on a case-by-case basis.
-* Data quality: All information is provided **as-is**, and the user shall hold UCLA and information providers supplying data to UCLA free and harmless in connection with the use of such information. UCLA Dataverse accepts data deposited **as-is**.  As file formats become obsolete, UCLA Dataverse will not migrate data to newer formats, although deposits which the content owner has migrated will be accepted.  In the case of unusual or proprietary file formats, Dataverse cannot guarantee their readability in future years.
-* Metadata types and sources: All metadata is stored internally in JSON-format according to a defined JSON schema. Metadata is exported in several standard formats such as MARCXML, Dublin Core, and DataCite Metadata Schema (according to the OpenAIRE Guidelines).
+* Data quality: All information is provided **as-is**, and the user shall hold UCLA and information providers supplying data to UCLA free and harmless in connection with the use of such information.
+* Metadata types and sources: 
 * Licenses: Users must specify a license for all publicly available files. Licenses for closed access files may be specified in the description field.
 
 
@@ -26,7 +26,7 @@ How do I know I am ready to deposit?
 * Your data is documented and described sufficiently for purposes of discovery and reuse
 * Your have the rights to publish your data and/or have received permission from other rights-holders
 
-## What are the restrictions?
+What are the restrictions?
 -----------------------------
 
 * Deposits must contain unrestricted content with no private, confidential, or otherwise legally restricted information.  If applicable, data should be de-identified and anonymized.
@@ -56,7 +56,7 @@ How much can be deposited?
 Can deposits be escrowed/embargoed?
 -----------------------------------
 
-* Depositors have the option of defining a publication delay period for all or part of a deposit, normally not to exceed 12 months.  Longer periods will be considered on a case-by-case basis.
+* Dataverse doesn't support escrowed/embargoed datasets (timed release). However you can keep your data as a draft.
 
 Copyright
 ---------
