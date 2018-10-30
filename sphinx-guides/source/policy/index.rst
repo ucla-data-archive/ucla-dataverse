@@ -11,5 +11,5 @@ UCLA Dataverse Policies
 .. toctree::
 
   tos
-  data-collection
+  collection
   privacy
