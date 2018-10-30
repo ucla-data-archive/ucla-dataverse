@@ -9,7 +9,6 @@ Acceptance of Terms
 
 The following terms and conditions govern all use of the UCLA Dataverse website https://dataverse.ucla.edu (the “Site”) and the services available on or at the Site (taken together, the “Service”). The Service is owned and operated by The Data Science Center for The UCLA Library at the University of California at Los Angeles (“DSC”). The Service is offered subject to acceptance without modification of all of the terms and conditions contained herein (the “Terms of Use”) and all other operating rules, policies and procedures that may be published from time to time on this Site by DSC.
 
-The Service is available only to individuals who are at least 13 years old or possess legal parental or guardian consent. If you do not so qualify, do not attempt to use the Service. DSC may refuse to offer the Service to any person or entity at any time and may change its eligibility criteria, at any time, in its sole discretion.
 
 Modification of Terms of Use
 ----------------------------
