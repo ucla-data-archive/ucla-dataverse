@@ -1,4 +1,4 @@
-Terms of Service
+UCLA Terms of Service
 ================
 
 .. contents:: |toctitle|
@@ -78,8 +78,8 @@ This information has been previously released to the public
 * All information was collected with an explicit statement concerning the public nature of the data, such as information collected for certain governmental regulatory purposes
 * For federal records (data created by a U.S. federal government agency or under a federal contract) only, all identified or identifiable subjects are deceased and no federal statute explicitly restricts the release of the data
 * You give permission and any required licenses to DSC to make the Content available for archiving, preservation and access, within Data-PASS including, without restriction, permission:
-* To re-disseminate copies of the User Submissions in a variety of distribution formats according to the standard terms of use of UNC Dataverse
-* To promote and advertise the User Submissions in any publicity (in any form) for Data-PASS and the UNC Dataverse
+* To re-disseminate copies of the User Submissions in a variety of distribution formats according to the standard terms of use of UCLA Dataverse
+* To promote and advertise the User Submissions in any publicity (in any form) for Data-PASS and the UCLA Dataverse
 * To describe, catalog, validate and document the User Submissions
 * To store, translate, copy or re-format the User Submissions in any way to ensure their future preservation and accessibility, improve usability and/or protect respondent confidentiality
 * To incorporate metadata (cataloging information) or documentation in the User Submission into public access catalogues
@@ -91,7 +91,7 @@ User Submission Data Usage License Agreement
 
 You hereby adopt and agree to the Creative Commons Zero Public Domain Dedication Waiver, or you hereby affirm that you have adopted a Custom Data Usage License Agreement or the Data Use Agreement described below.
 1. Creative Commons Zero Public Domain Dedication Waiver
-You acknowledge that UNC Dataverse’s default data usage license agreement for all uploaded materials is a Creative Commons Zero (“CC0”) Public Domain Dedication Waiver. For more information, please visit Creative Commons Zero Full Legal Text at https://creativecommons.org/publicdomain/zero/1.0/legalcode. Unless you take all steps necessary to give full legal effect to a “Custom Data Usage License Agreement” or the “Data Use Agreement” described below, you agree to all terms and responsibilities set forth in the CC0 Public Domain Dedication Waiver.
+You acknowledge that UCLA Dataverse’s default data usage license agreement for all uploaded materials is a Creative Commons Zero (“CC0”) Public Domain Dedication Waiver. For more information, please visit Creative Commons Zero Full Legal Text at https://creativecommons.org/publicdomain/zero/1.0/legalcode. Unless you take all steps necessary to give full legal effect to a “Custom Data Usage License Agreement” or the “Data Use Agreement” described below, you agree to all terms and responsibilities set forth in the CC0 Public Domain Dedication Waiver.
 2. Custom Data Usage License Agreement
 As an alternative, users may draft a Custom Data Usage License Agreement. By choosing to draft a Custom Data Usage License Agreement for a particular dataset, users represent that:
 
