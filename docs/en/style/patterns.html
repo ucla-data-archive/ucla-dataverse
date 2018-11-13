@@ -1,0 +1,791 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Patterns &#8212; UCLA Dataverse</title>
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Foundations" href="foundations.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dv-bs-navbar-details">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://dataverse.ucla.edu" id="dataverse-org-homepage-url">UCLA Dataverse</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+       <div class="collapse navbar-collapse" id="dv-bs-navbar-details">
+           <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a target="_blank" href="http://dataverse.org/about">About the Dataverse Project</a></li>
+                        <li><a target="_blank" href="http://dataverse.org/add-data">Add Data</a></li>
+                        <li><a target="_blank" href="http://dataverse.org/blog">Blog</a></li>
+                        <li><a target="_blank" href="http://dataverse.org/presentations">Presentations</a></li>
+                        <li><a target="_blank" href="http://dataverse.org/publications">Publications</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a target="_blank" href="http://dataverse.org/">
+                        Community
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Best Practices <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a target="_blank" href="http://dataverse.org/data-citation">Academic Credit</a></li>
+                        <li><a target="_blank" href="">UCLA Dataverse Policies</a></li>
+                        <li><a target="_blank" href="http://dataverse.org/data-management">Data Management</a></li>
+                        <li><a target="_blank" href="http://dataverse.org/replication-dataset">Replication Dataset Guidelines</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:datascience+dvn@ucla.edu">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+       </div><!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary">
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../policy/index.html">UCLA Dataverse Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Style Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="foundations.html">Foundations</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Patterns</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="patterns">
+<h1>Patterns<a class="headerlink" href="#patterns" title="Permalink to this headline">¶</a></h1>
+<p>Patterns are what emerge when using the foundation elements together with basic objects like buttons and alerts, more complex Javascript components from <a class="reference external" href="http://getbootstrap.com/components/">Bootstrap</a> like tooltips and dropdowns, and AJAX components from <a class="reference external" href="https://www.primefaces.org/showcase/">PrimeFaces</a> like datatables and commandlinks.</p>
+<div class="contents local topic" id="toctitle">
+<p class="topic-title first">Contents:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#navbar" id="id1">Navbar</a></li>
+<li><a class="reference internal" href="#breadcrumbs" id="id2">Breadcrumbs</a></li>
+<li><a class="reference internal" href="#tables" id="id3">Tables</a></li>
+<li><a class="reference internal" href="#forms" id="id4">Forms</a></li>
+<li><a class="reference internal" href="#buttons" id="id5">Buttons</a><ul>
+<li><a class="reference internal" href="#action-buttons" id="id6">Action Buttons</a></li>
+<li><a class="reference internal" href="#form-buttons" id="id7">Form Buttons</a></li>
+<li><a class="reference internal" href="#icon-only-buttons" id="id8">Icon-Only Buttons</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pagination" id="id9">Pagination</a></li>
+<li><a class="reference internal" href="#labels" id="id10">Labels</a></li>
+<li><a class="reference internal" href="#alerts" id="id11">Alerts</a></li>
+<li><a class="reference internal" href="#images" id="id12">Images</a></li>
+<li><a class="reference internal" href="#panels" id="id13">Panels</a></li>
+<li><a class="reference internal" href="#tabs" id="id14">Tabs</a></li>
+<li><a class="reference internal" href="#modals" id="id15">Modals</a></li>
+</ul>
+</div>
+<div class="section" id="navbar">
+<h2><a class="toc-backref" href="#id1">Navbar</a><a class="headerlink" href="#navbar" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="http://getbootstrap.com/components/#navbar">Navbar component</a> from Bootstrap spans the top of the application and contains the logo/branding, aligned to the left, plus search form and links, aligned to the right.</p>
+<p>When logged in, the account name is a dropdown menu, linking the user to account-specific content and the log out link.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+
+        <nav id="navbarFixed" class="navbar navbar-default"><!-- navbar-fixed-top -->
+    <div class="container" style="width:auto !important;">
+        <div class="navbar-header">
+            <a href="#" onclick="return false;">
+                <span class="navbar-brand"><i id="icon-dataverse" class="icon-dataverse"></i> Dataverse</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="topNavBar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <span id="dataverseSupportLink" class="dropdown-toggle" data-toggle="dropdown">
+                        User Name <b class="caret"></b>
+                    </span>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="return false;">My Data</a>
+                        </li>
+                        <li><a href="#" onclick="return false;">Notifications</a>
+                        </li>
+                        <li><a href="#" onclick="return false;">Account Information</a>
+                        </li>
+                        <li><a href="#" onclick="return false;">API Token</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="logout"><a href="#" onclick="return false;">Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;navbarFixed&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;navbar navbar-default navbar-fixed-top&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;navbar-header&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;return false;&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;navbar-brand&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;icon-dataverse&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;icon-dataverse&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Dataverse<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;collapse navbar-collapse&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;topNavBar&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;nav navbar-nav navbar-right&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+          ...
+        <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="breadcrumbs">
+<h2><a class="toc-backref" href="#id2">Breadcrumbs</a><a class="headerlink" href="#breadcrumbs" title="Permalink to this headline">¶</a></h2>
+<p>The breadcrumbs are displayed under the header, and provide a trail of links for users to navigate the hierarchy of containing objects, from file to dataset to dataverse. It utilizes a JSF <a class="reference external" href="http://docs.oracle.com/javaee/6/javaserverfaces/2.0/docs/pdldocs/facelets/ui/repeat.html">repeat component</a> to iterate through the breadcrumbs.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+
+        <div id="breadcrumbNavBlock" class="container">
+    <div class="breadcrumbBlock">
+        <a id="breadcrumbLnk0" href="#" onclick="return false;">Name of a Dataverse</a>
+    </div>
+    <span class="breadcrumbCarrot"> &gt; </span>
+    <div class="breadcrumbBlock">
+        <a id="breadcrumbLnk1" href="#" onclick="return false;">Name of Another Dataverse</a>
+    </div>
+    <span class="breadcrumbCarrot"> &gt; </span>
+    <div class="breadcrumbBlock">
+        <span class="breadcrumbActive">Title of Dataset</span>
+    </div>
+</div>
+
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;breadcrumbNavBlock&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span> <span class="na">jsf:rendered</span><span class="o">=</span><span class="s">&quot;#{true}&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ui:repeat</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;#{page.breadcrumbs}&quot;</span> <span class="na">var</span><span class="o">=</span><span class="s">&quot;breadcrumb&quot;</span> <span class="na">varStatus</span><span class="o">=</span><span class="s">&quot;status&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h:outputText</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot; &gt; &quot;</span> <span class="na">styleClass</span><span class="o">=</span><span class="s">&quot;breadcrumbCarrot&quot;</span> <span class="na">rendered</span><span class="o">=</span><span class="s">&quot;#{true}&quot;</span><span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;breadcrumbBlock&quot;</span><span class="p">&gt;</span>
+      ...
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">ui:repeat</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tables">
+<h2><a class="toc-backref" href="#id3">Tables</a><a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<p>Most tables use the <a class="reference external" href="https://www.primefaces.org/showcase/ui/data/datatable/basic.xhtml">DataTable components</a> from PrimeFaces and are styled using the <a class="reference external" href="http://getbootstrap.com/css/#tables">Tables component</a> from Bootstrap.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+      <div class="ui-datatable ui-widget">
+              <div class="ui-datatable-tablewrapper">
+                      <table role="grid">
+                              <thead>
+                                      <tr role="row">
+                                              <th style="width:60px;" class="ui-state-default ui-selection-column col-select-width text-center" role="columnheader"><span class="ui-column-title"></span><div class="ui-chkbox ui-chkbox-all ui-widget"><div class="ui-helper-hidden-accessible"><input type="checkbox" name="table_checkbox"></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div></th><th class="ui-state-default col-sm-2 text-center" role="columnheader"><span class="ui-column-title">Dataset</span></th><th class="ui-state-default" role="columnheader"><span class="ui-column-title">Summary</span></th><th class="ui-state-default col-sm-3" role="columnheader"><span class="ui-column-title">Published</span></th>
+                                              </tr>
+                                      </thead>
+                                      <tbody class="ui-datatable-data ui-widget-content">
+                                              <tr data-ri="0" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false">
+                                                      <td role="gridcell" class="ui-selection-column col-select-width text-center">
+                                                              <div class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input type="checkbox" name="table_checkbox"></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div>
+                                                      </td>
+                                                      <td role="gridcell" class="text-center">
+                                      <a href="#" class="ui-commandlink ui-widget" onclick="return false;">3.0</a>
+                                      </td>
+                                      <td role="gridcell">
+                                              <span class="highlightBold">Files (Changed File Metadata: 1); </span><a href="#" class="ui-commandlink ui-widget" onclick="return false;">View Details</a>
+                                      </td>
+                                      <td role="gridcell"><span>March 8, 2017</span></td>
+                              </tr>
+                              <tr data-ri="1" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false">
+                                  <td role="gridcell" class="ui-selection-column col-select-width text-center">
+                                      <div class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input type="checkbox" name="table_checkbox"></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div>
+                                  </td>
+                                  <td role="gridcell" class="text-center">
+                                      <a href="#" class="ui-commandlink ui-widget" onclick="return false;">2.0</a>
+                                  </td>
+                                  <td role="gridcell">
+                                      <span class="highlightBold">Additional Citation Metadata: </span> (1 Added); <a href="#" class="ui-commandlink ui-widget" onclick="return false;">View Details</a>
+                                      </td>
+                                      <td role="gridcell"><span>January 25, 2017</span></td>
+                              </tr>
+                              <tr data-ri="2" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false">
+                                      <td role="gridcell" class="ui-selection-column col-select-width text-center">
+                                              <div class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input type="checkbox" name="table_checkbox"></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div>
+                                      </td>
+                                      <td role="gridcell" class="text-center">
+                                          <a href="#" class="ui-commandlink ui-widget" onclick="return false;">1.1</a></td><td role="gridcell"><span class="highlightBold">Additional Citation Metadata: </span> (1 Added); <a href="#" class="ui-commandlink ui-widget" onclick="return false;">View Details</a>
+                                      </td>
+                                      <td role="gridcell"><span>October 25, 2016</span></td>
+                              </tr>
+                              <tr data-ri="3" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false">
+                                      <td role="gridcell" class="ui-selection-column col-select-width text-center">
+                                              <div class="ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input type="checkbox" name="table_checkbox"></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div>
+                                      </td>
+                                      <td role="gridcell" class="text-center">
+                                          <a href="#" class="ui-commandlink ui-widget" onclick="return false;">1.0</a></td><td role="gridcell">
+                                          This is the first published version.
+                                      </td>
+                                      <td role="gridcell"><span>September 19, 2016</span></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p:dataTable</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;itemTable&quot;</span> <span class="na">styleClass</span><span class="o">=</span><span class="s">&quot;headerless-table margin-top&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;#{page.item}&quot;</span> <span class="na">var</span><span class="o">=</span><span class="s">&quot;item&quot;</span> <span class="na">widgetVar</span><span class="o">=</span><span class="s">&quot;itemTable&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p:column</span><span class="p">&gt;</span>
+    ...
+  <span class="p">&lt;/</span><span class="nt">p:column</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">p:dataTable</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="forms">
+<h2><a class="toc-backref" href="#id4">Forms</a><a class="headerlink" href="#forms" title="Permalink to this headline">¶</a></h2>
+<p>Forms fulfill various functions across the site, but we try to style them consistently. We use the <code class="docutils literal notranslate"><span class="pre">.form-horizontal</span></code> layout, which uses <code class="docutils literal notranslate"><span class="pre">.form-group</span></code> to create a grid of rows for the labels and inputs. The consistent style of forms is maintained using the <a class="reference external" href="http://getbootstrap.com/css/#forms">Forms component</a> from Bootstrap. Form elements like the <a class="reference external" href="https://www.primefaces.org/showcase/ui/input/inputText.xhtml">InputText component</a> from PrimeFaces are kept looking clean and consistent across each page.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+
+              <div class="form-horizontal">
+                      <div class="form-group">
+              <label for="userNameEmail" class="col-sm-3 control-label">
+                  <span data-toggle="tooltip" data-placement="auto right" class="tooltiplabel text-info" data-original-title="Between 2-60 characters, and can use &quot;a-z&quot;, &quot;0-9&quot;, &quot;_&quot; for your username.">
+                      Username <span class="glyphicon glyphicon-asterisk text-danger"></span>
+                  </span>
+              </label>
+              <div class="col-sm-4">
+                      <input name="userName" type="text" value="" tabindex="1" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-default form-control" role="textbox" aria-disabled="false" aria-readonly="false">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="firstName" class="col-sm-3 control-label">
+                  <span data-toggle="tooltip" data-placement="auto right" class="tooltiplabel text-info" data-original-title="The first name or name you would like to use for this account.">
+                      Given Name <span class="glyphicon glyphicon-asterisk text-danger"></span>
+                  </span>
+              </label>
+              <div class="col-sm-4">
+                      <input name="firstName" type="text" value="" tabindex="4" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" role="textbox" aria-disabled="false" aria-readonly="false">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="lastName" class="col-sm-3 control-label">
+                  <span data-toggle="tooltip" data-placement="auto right" class="tooltiplabel text-info" data-original-title="The last name you would like to use for this account.">
+                      Family Name <span class="glyphicon glyphicon-asterisk text-danger"></span>
+                  </span>
+              </label>
+              <div class="col-sm-4">
+                      <input name="lastName" type="text" value="" tabindex="5" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" role="textbox" aria-disabled="false" aria-readonly="false">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="email" class="col-sm-3 control-label">
+                  <span data-toggle="tooltip" data-placement="auto right" class="tooltiplabel text-info" data-original-title="" title="">
+                      Email <span class="glyphicon glyphicon-asterisk text-danger"></span>
+                  </span>
+              </label>
+              <div class="col-sm-4">
+                      <input name="email" type="text" value="" tabindex="6" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" role="textbox" aria-disabled="false" aria-readonly="false">
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-horizontal&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;userNameEmail&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-3 control-label&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">data-placement</span><span class="o">=</span><span class="s">&quot;auto right&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;tooltiplabel text-info&quot;</span> <span class="na">data-original-title</span><span class="o">=</span><span class="s">&quot;Between 2-60 characters, and can use &amp;quot;a-z&amp;quot;, &amp;quot;0-9&amp;quot;, &amp;quot;_&amp;quot; for your username.&quot;</span><span class="p">&gt;</span>
+        Username <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;glyphicon glyphicon-asterisk text-danger&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-4&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;userName&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled form-control&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;textbox&quot;</span> <span class="na">aria-disabled</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="na">aria-readonly</span><span class="o">=</span><span class="s">&quot;false&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="buttons">
+<h2><a class="toc-backref" href="#id5">Buttons</a><a class="headerlink" href="#buttons" title="Permalink to this headline">¶</a></h2>
+<p>There are various types of buttons for various actions, so we have many components to use, including the <a class="reference external" href="https://www.primefaces.org/showcase/ui/button/commandButton.xhtml">CommandButton component</a> and <a class="reference external" href="https://www.primefaces.org/showcase/ui/button/commandLink.xhtml">CommandLink component</a> from PrimeFaces, as well as the basic JSF <a class="reference external" href="http://docs.oracle.com/javaee/6/javaserverfaces/2.0/docs/pdldocs/facelets/h/link.html">Link component</a> and <a class="reference external" href="http://docs.oracle.com/javaee/6/javaserverfaces/2.0/docs/pdldocs/facelets/h/outputLink.html">OutputLink component</a>. Those are styled using the <a class="reference external" href="http://getbootstrap.com/css/#buttons">Buttons component</a>, <a class="reference external" href="http://getbootstrap.com/components/#btn-groups">Button Groups component</a> and <a class="reference external" href="http://getbootstrap.com/components/#btn-dropdowns">Buttons Dropdowns component</a> from Bootstrap.</p>
+<div class="section" id="action-buttons">
+<h3><a class="toc-backref" href="#id6">Action Buttons</a><a class="headerlink" href="#action-buttons" title="Permalink to this headline">¶</a></h3>
+<p>For action buttons on a page, we include an icon and text label. Action buttons are generally aligned to the right side of the page.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+
+        <div class="btn-group pull-right">
+    <button type="button" id="editDataSet" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+        <span class="glyphicon glyphicon-pencil"></span> Edit <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu pull-right text-left" role="menu">
+        <li>
+                <a href="#" onclick="return false;">Files (Upload)</a>
+        </li>
+        <li>
+                <a id="datasetForm:editMetadata" href="#" class="ui-commandlink ui-widget" onclick="return false;">Metadata</a>
+        </li>
+        <li>
+                <a id="datasetForm:editTerms" href="#" class="ui-commandlink ui-widget" onclick="return false;">Terms</a>
+        </li>
+        <li class="dropdown-submenu pull-left">
+            <a tabindex="-1" href="#">Permissions</a>
+            <ul class="dropdown-menu">
+                <li>
+                        <a id="datasetForm:managePermissions" href="#" onclick="return false;" class="ui-commandlink ui-widget">Dataset</a>
+                </li>
+                <li>
+                        <a id="datasetForm:manageFilePermissions" href="#" onclick="return false;" class="ui-commandlink ui-widget">File</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+                <a id="datasetForm:privateUrl" href="#" class="ui-commandlink ui-widget" onclick="return false;">Private URL</a>
+        </li>
+        <li>
+                <a href="#" onclick="return false;">Thumbnails + Widgets</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+                <a id="datasetForm:deaccessionDatasetLink" href="#" class="ui-commandlink ui-widget" onclick="return false;">Deaccession Dataset</a>
+        </li>
+    </ul>
+</div>
+
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn-group&quot;</span> <span class="na">jsf:rendered</span><span class="o">=</span><span class="s">&quot;#{true}&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;editDataSet&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-default dropdown-toggle&quot;</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;dropdown&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;glyphicon glyphicon-pencil&quot;</span><span class="p">/&gt;</span> Edit <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;caret&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown-menu pull-right text-left&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;menu&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h:outputLink</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">h:outputLink</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown-submenu pull-left&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&quot;-1&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Option<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dropdown-menu&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">h:link</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">h:link</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">h:link</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">h:link</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    ...
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="form-buttons">
+<h3><a class="toc-backref" href="#id7">Form Buttons</a><a class="headerlink" href="#form-buttons" title="Permalink to this headline">¶</a></h3>
+<p>Form buttons typically appear at the bottom of a form, aligned to the left. They do not have icons, just text labels.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+        <div class="button-block">
+                <button id="datasetForm:save" name="datasetForm:save" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn btn-default" onclick="return false;" tabindex="1000" type="submit" role="button" aria-disabled="false">
+                        <span class="ui-button-text ui-c">Save Changes</span>
+                </button>
+                <button id="datasetForm:cancel" name="datasetForm:cancel" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn btn-default" onclick="return false;" tabindex="1000" type="submit" role="button" aria-disabled="false">
+                        <span class="ui-button-text ui-c">Cancel</span>
+                </button>
+        </div>
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;button-block&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p:commandButton</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;save&quot;</span> <span class="na">styleClass</span><span class="o">=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;#{bundle.saveChanges}&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;#{page.save}&quot;</span> <span class="na">update</span><span class="o">=</span><span class="s">&quot;@form,:messagePanel&quot;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p:commandButton</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;cancel&quot;</span> <span class="na">styleClass</span><span class="o">=</span><span class="s">&quot;btn btn-default&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;#{bundle.cancel}&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;#{page.cancel}&quot;</span> <span class="na">process</span><span class="o">=</span><span class="s">&quot;@this&quot;</span> <span class="na">update</span><span class="o">=</span><span class="s">&quot;@form&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p:resetInput</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;@form&quot;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">p:commandButton</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="icon-only-buttons">
+<h3><a class="toc-backref" href="#id8">Icon-Only Buttons</a><a class="headerlink" href="#icon-only-buttons" title="Permalink to this headline">¶</a></h3>
+<p>There are a few places where we use icon-only buttons with no text label. For these buttons, we do utilize tooltips that display on hover, containing a text label.</p>
+<p>We use the style class <code class="docutils literal notranslate"><span class="pre">.no-text</span></code> with the <code class="docutils literal notranslate"><span class="pre">.glyphicon</span></code> class to fix spacing issues from margins and padding applied to buttons with text labels.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+    <a href="#" class="ui-commandlink ui-widget btn btn-default btn-sm bootstrap-button-tooltip compound-field-btn" aria-label="Add" onclick="return false;" tabindex="1" title="" data-original-title="Add">
+    <span class="glyphicon glyphicon-plus no-text"></span>
+</a>
+<a href="#" class="ui-commandlink ui-widget btn btn-default btn-sm bootstrap-button-tooltip compound-field-btn" aria-label="Delete" onclick="return false;" tabindex="1" title="" data-original-title="Delete">
+    <span class="glyphicon glyphicon-minus no-text"></span>
+</a>
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p:commandLink</span> <span class="na">styleClass</span><span class="o">=</span><span class="s">&quot;btn btn-default btn-sm bootstrap-button-tooltip&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;#{bundle.add}&quot;</span> <span class="na">actionListener</span><span class="o">=</span><span class="s">&quot;#{Page.add(valCount.index + 1)}&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h:outputText</span> <span class="na">styleClass</span><span class="o">=</span><span class="s">&quot;glyphicon glyphicon-plus no-text&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">p:commandLink</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p:commandLink</span> <span class="na">styleClass</span><span class="o">=</span><span class="s">&quot;btn btn-default btn-sm bootstrap-button-tooltip&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;#{bundle.delete}&quot;</span> <span class="na">actionListener</span><span class="o">=</span><span class="s">&quot;#{Page.remove(valCount.index)}&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h:outputText</span> <span class="na">styleClass</span><span class="o">=</span><span class="s">&quot;glyphicon glyphicon-minus no-text&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">p:commandLink</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pagination">
+<h2><a class="toc-backref" href="#id9">Pagination</a><a class="headerlink" href="#pagination" title="Permalink to this headline">¶</a></h2>
+<p>We use the <a class="reference external" href="http://getbootstrap.com/components/#pagination">Pagination component</a> from Bootstrap for paging through search results.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body text-center">
+
+      <ul class="pagination">
+          <li class="disabled">
+              <a href="#" onclick="return false;">«</a>
+          </li>
+          <li class="disabled">
+              <a href="#" onclick="return false;">&lt; Previous</a>
+          </li>
+              <li class="active"><a href="#" onclick="return false;">1
+                      <span class="sr-only">(Current)</span></a>
+              </li>
+              <li><a href="#" onclick="return false;">2</a>
+              </li>
+              <li><a href="#" onclick="return false;">3</a>
+              </li>
+              <li><a href="#" onclick="return false;">4</a>
+              </li>
+              <li><a href="#" onclick="return false;">5</a>
+              </li>
+          <li>
+              <a href="#" onclick="return false;">Next &gt;</a>
+          </li>
+          <li>
+              <a href="#" onclick="return false;">»</a>
+          </li>
+      </ul>
+
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pagination&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;#{include.page == &#39;1&#39; ? &#39;disabled&#39; : &#39;&#39;}&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h:outputLink</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;#{page.page}&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h:outputText</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&amp;#171;&quot;</span><span class="p">/&gt;</span>
+      ...
+    <span class="p">&lt;/</span><span class="nt">h:outputLink</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;#{include.page == &#39;1&#39; ? &#39;disabled&#39; : &#39;&#39;}&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h:outputLink</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;#{page.page}&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h:outputText</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&amp;lt; #{bundle.previous}&quot;</span><span class="p">/&gt;</span>
+      ...
+    <span class="p">&lt;/</span><span class="nt">h:outputLink</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  ...
+  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;#{include.page == include.totalPages ? &#39;disabled&#39; : &#39;&#39;}&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h:outputLink</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;#{page.page}&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h:outputText</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;#{bundle.next} &amp;gt;&quot;</span><span class="p">/&gt;</span>
+      ...
+    <span class="p">&lt;/</span><span class="nt">h:outputLink</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;#{include.page == include.totalPages ? &#39;disabled&#39; : &#39;&#39;}&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h:outputLink</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;#{page.page}&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h:outputText</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&amp;#187;&quot;</span><span class="p">/&gt;</span>
+      ...
+    <span class="p">&lt;/</span><span class="nt">h:outputLink</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="labels">
+<h2><a class="toc-backref" href="#id10">Labels</a><a class="headerlink" href="#labels" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="http://getbootstrap.com/components/#labels">Labels component</a> from Bootstrap is used for publication status (DRAFT, In Review, Unpublished, Deaccessioned), and Dataset version, as well as Tabular Data Tags (Survey, Time Series, Panel, Event, Genomics, Network, Geospatial).</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+
+    <span class="label label-default">Version 2.0</span>
+    <span class="label label-primary">DRAFT</span>
+    <span class="label label-success">In Review</span>
+    <span class="label label-info">Geospatial</span>
+    <span class="label label-warning">Unpublished</span>
+    <span class="label label-danger">Deaccessioned</span>
+
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label label-default&quot;</span><span class="p">&gt;</span>Version 2.0<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label label-primary&quot;</span><span class="p">&gt;</span>DRAFT<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label label-success&quot;</span><span class="p">&gt;</span>In Review<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label label-info&quot;</span><span class="p">&gt;</span>Geospatial<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label label-warning&quot;</span><span class="p">&gt;</span>Unpublished<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label label-danger&quot;</span><span class="p">&gt;</span>Deaccessioned<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="alerts">
+<h2><a class="toc-backref" href="#id11">Alerts</a><a class="headerlink" href="#alerts" title="Permalink to this headline">¶</a></h2>
+<p>For our help/information, success, warning, and error message blocks we use a custom built UI component based on the <a class="reference external" href="http://getbootstrap.com/components/#alerts">Alerts component</a> from Bootstrap.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+    <div class="color-swatches">
+      <div class="alert alert-dismissable alert-info">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+              <span class="glyphicon glyphicon-info-sign"></span>&nbsp;<strong>Edit Dataset Metadata - Add more metadata about this dataset to help others easily find it.</strong>&nbsp;
+          </div>
+          <div class="alert alert-success">
+          <span class="glyphicon glyphicon glyphicon-ok-sign"></span>&nbsp;<strong>Success!</strong> – The metadata for this dataset has been updated.
+      </div>
+      <div class="alert alert-danger">
+                      <span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;<strong>Error</strong> – The username, email address, or password you entered is invalid. Need assistance accessing your account? If you believe this is an error, please contact <a href="#" class="ui-commandlink ui-widget" onclick="return false;">Root Support</a> for assistance.
+      </div>
+    </div>
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;alert alert-success&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;alert&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;alert alert-info&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;alert&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;alert alert-warning&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;alert&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;alert alert-danger&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;alert&quot;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="images">
+<h2><a class="toc-backref" href="#id12">Images</a><a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
+<p>For images, we use the <a class="reference external" href="https://www.primefaces.org/showcase/ui/multimedia/graphicImage.xhtml">GraphicImage  component</a> from PrimeFaces, or the basic JSF <a class="reference external" href="http://docs.oracle.com/javaee/6/javaserverfaces/2.1/docs/vdldocs/facelets/h/graphicImage.html">GraphicImage component</a>.</p>
+<p>To display images in a responsive way, they are styled with <code class="docutils literal notranslate"><span class="pre">.img-responsive</span></code>, an <a class="reference external" href="http://getbootstrap.com/css/#images">Images CSS class</a> from Bootstrap.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+    <img alt="image-responsive" class="img-responsive" src="../_images/dataverse-project.png">
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p:graphicImage</span> <span class="na">styleClass</span><span class="o">=</span><span class="s">&quot;img-responsive&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;#{Page.imageId}?imageThumb=400&quot;</span> <span class="p">/&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="panels">
+<h2><a class="toc-backref" href="#id13">Panels</a><a class="headerlink" href="#panels" title="Permalink to this headline">¶</a></h2>
+<p>The most common of our containers, the <a class="reference external" href="http://getbootstrap.com/components/#panels">Panels component</a> from Bootstrap is used to add a border and padding around sections of content like metadata blocks. Displayed with a header and/or footer, it can also be used with the  <a class="reference external" href="http://getbootstrap.com/javascript/#collapse">Collapse plugin</a> from Bootstrap.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+
+      <div class="panel panel-default">
+          <div class="panel-body">
+              Basic panel example
+          </div>
+      </div>
+
+      <div class="panel-group">
+          <div class="panel panel-default">
+              <div data-toggle="collapse" data-target="#panelCollapse0" class="panel-heading text-info">
+                  Panel Heading &nbsp;<span class="glyphicon glyphicon-chevron-up"></span>
+              </div>
+              <div id="panelCollapse0" class="collapse in">
+                  <div class="panel-body metadata-panel-body">
+                      <div class="form-group col-sm-12">
+                          <label for="metadata_dsDescription" class="col-sm-3 control-label">
+                              <span data-toggle="tooltip" data-placement="auto right" class="tooltiplabel text-info" data-original-title="Label description.">
+                                  Label
+                              </span>
+                          </label>
+                          <div class="col-sm-9">Value</div>
+                      </div>
+                      <div class="form-group col-sm-12">
+                          <label for="metadata_subject" class="col-sm-3 control-label">
+                              <span data-toggle="tooltip" data-placement="auto right" class="tooltiplabel text-info" data-original-title="Label description.">
+                                  Label
+                              </span>
+                          </label>
+                          <div class="col-sm-9">Value</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel panel-default&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-body&quot;</span><span class="p">&gt;</span>
+    Basic panel example
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel panel-default&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;collapse&quot;</span> <span class="na">data-target</span><span class="o">=</span><span class="s">&quot;#panelCollapse0&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-heading&quot;</span><span class="p">&gt;</span>
+    Panel Heading <span class="ni">&amp;#160;</span><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;glyphicon glyphicon-chevron-up&quot;</span><span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;panelCollapse0&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;panel-body form-horizontal collapse in&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-4 control-label&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">data-placement</span><span class="o">=</span><span class="s">&quot;auto right&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;tooltiplabel text-info&quot;</span> <span class="na">data-original-title</span><span class="o">=</span><span class="s">&quot;Label description.&quot;</span><span class="p">&gt;</span>
+          Label
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-6&quot;</span><span class="p">&gt;</span>
+        Value
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-4 control-label&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;tooltip&quot;</span> <span class="na">data-placement</span><span class="o">=</span><span class="s">&quot;auto right&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;tooltiplabel text-info&quot;</span> <span class="na">data-original-title</span><span class="o">=</span><span class="s">&quot;Label description.&quot;</span><span class="p">&gt;</span>
+          Label
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-6&quot;</span><span class="p">&gt;</span>
+        Value
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tabs">
+<h2><a class="toc-backref" href="#id14">Tabs</a><a class="headerlink" href="#tabs" title="Permalink to this headline">¶</a></h2>
+<p>Tabs are used to provide content panes on a page that allow the user to view different sections of content without navigating to a different page.</p>
+<p>We use the <a class="reference external" href="https://www.primefaces.org/showcase/ui/panel/tabView.xhtml">TabView component</a> from PrimeFaces, which is styled using the <a class="reference external" href="http://getbootstrap.com/javascript/#tabs">Tab component</a> from Bootstrap.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+    <div class="color-swatches">
+
+      <div id="datasetForm:tabView" class="ui-tabs ui-widget ui-widget-content ui-corner-all ui-hidden-container ui-tabs-top" data-widget="content" style="border-bottom:0;">
+
+              <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+                      <li class="ui-state-default ui-tabs-selected ui-state-active ui-corner-top" role="tab" aria-expanded="true" aria-selected="true" tabindex="0">
+                              <a href="#" onclick="return false;" tabindex="-1">Content Tab 1</a>
+                      </li>
+                      <li class="ui-state-default ui-corner-top" role="tab" aria-expanded="false" aria-selected="false" tabindex="-1">
+                              <a href="#" onclick="return false;" tabindex="-1">Content Tab 2</a>
+                      </li>
+                      <li class="ui-state-default ui-corner-top" role="tab" aria-expanded="false" aria-selected="false" tabindex="-1">
+                              <a href="#" onclick="return false;" tabindex="-1">Content Tab 3</a>
+                      </li>
+                      <li class="ui-state-default ui-corner-top" role="tab" aria-expanded="false" aria-selected="false" tabindex="-1">
+                              <a href="#" onclick="return false;" tabindex="-1">Content Tab 4</a>
+                      </li>
+              </ul>
+
+      </div>
+
+    </div>
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p:tabView</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;tabView&quot;</span> <span class="na">widgetVar</span><span class="o">=</span><span class="s">&quot;content&quot;</span> <span class="na">activeIndex</span><span class="o">=</span><span class="s">&quot;#{Page.selectedTabIndex}&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p:ajax</span> <span class="na">event</span><span class="o">=</span><span class="s">&quot;tabChange&quot;</span> <span class="na">listener</span><span class="o">=</span><span class="s">&quot;#{Page.tabChanged}&quot;</span> <span class="na">update</span><span class="o">=</span><span class="s">&quot;@this&quot;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p:tab</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;dataTab&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;#{bundle.files}&quot;</span><span class="p">&gt;</span>
+      ...
+  <span class="p">&lt;/</span><span class="nt">p:tab</span><span class="p">&gt;</span>
+  ...
+<span class="p">&lt;/</span><span class="nt">p:tabView</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="modals">
+<h2><a class="toc-backref" href="#id15">Modals</a><a class="headerlink" href="#modals" title="Permalink to this headline">¶</a></h2>
+<p>Modals are dialog prompts that act as popup overlays, but don’t create a new browser window. We use them for confirmation on a delete to make sure the user is aware of the consequences of their actions. We also use them to allow users to execute simple actions on a page without requiring them to navigate to and from a separate page.</p>
+<p>Buttons usually provide the UI prompt. A user clicks the button, which then opens a <a class="reference external" href="https://www.primefaces.org/showcase/ui/overlay/dialog/basic.xhtml">Dialog component</a>  or <a class="reference external" href="https://www.primefaces.org/showcase/ui/overlay/confirmDialog.xhtml">Confirm Dialog component</a>  from PrimeFaces that displays the modal with the necessary information and actions to take.</p>
+<p>The modal is styled using the <a class="reference external" href="http://getbootstrap.com/javascript/#modals">Modal component</a> from Bootstrap, for a popup window that prompts a user for information, with overlay and a backdrop, then header, content, and buttons. We can use style classes from Bootstrap for large (<code class="docutils literal notranslate"><span class="pre">.bs-example-modal-lg</span></code>) and small (<code class="docutils literal notranslate"><span class="pre">.bs-example-modal-sm</span></code>) width options.</p>
+<div class="panel panel-default code-example">
+  <div class="panel-body">
+
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Open Modal</button>
+
+    <div class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                      <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                </div>
+              </div>
+        </div>
+
+  </div>
+</div><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="c">&lt;!-- Large modal --&gt;</span>
+<span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;modal&quot;</span> <span class="na">data-target</span><span class="o">=</span><span class="s">&quot;.bs-example-modal-lg&quot;</span><span class="p">&gt;</span>Large modal<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal bs-example-modal-lg&quot;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&quot;-1&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;dialog&quot;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&quot;myLargeModalLabel&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-dialog modal-lg&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;document&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;modal-content&quot;</span><span class="p">&gt;</span>
+      ...
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2018, UC Regents.<br/>
+      Last updated on Nov 12, 2018.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1.<br/>
+    </p>
+  </div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-57484542-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
