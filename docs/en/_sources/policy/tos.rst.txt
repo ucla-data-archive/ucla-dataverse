@@ -18,7 +18,7 @@ DSC reserves the right, at its sole discretion, to modify or replace any of the 
 Privacy
 -------
 
-UCLA Dataverse complies with the UC and UCLA  [privacy policies](https://privacy.ucla.edu/) that ensure the privacy of all users will be respected and protected in keeping with federal and state laws.
+UCLA Dataverse complies with UC and UCLA `privacy policies <https://privacy.ucla.edu/>`_  to ensure the privacy of all users will be respected and protected in keeping with federal and state laws. By agreeing to the terms and conditions, student users agree that if they share personal or academic information on UCLA Dataverse they are waiving their `FERPA <http://www.adminpolicies.ucla.edu/APP/Number/220>`_ rights to privacy.
 
 Rules and Conduct
 -----------------
