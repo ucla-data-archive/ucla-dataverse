@@ -67,11 +67,10 @@ By posting User Submissions on or at the Site, or otherwise through the Service,
 
 The Service gives the Dataverse owner the ability to restrict access to User Submissions to specified user accounts ("Restricted User Submissions"). Third-Party Dataverse Administrators may also choose to restrict certain User Submissions in accordance with their own terms of use. All other User Submissions shall be deemed openly accessible to the public, or “Unrestricted.” By posting User Submissions on or at the Site, or otherwise through the Service, to your Dataverse or other Dataverses, or by allowing others to do so, you make the following representations and warranties to DSC and to the administrator of that Dataverse:
 
-* The User Submissions do not contain information that could directly or indirectly identify the subject except
+The User Submissions do not contain information that could directly or indirectly identify the subject except
 where the release of such identifying information has no potential for constituting an unwarranted invasion of privacy, a breach of confidentiality, or a violation of any applicable law. This includes, but is not limited to, the removal of any information subject to European Union data protection law or equivalent contractual restrictions on the use of data concerning a person in or from the European Union. In addition, for all personally identifiable information in the data, at least one of following conditions applies:
 
-This information has been previously released to the public
-
+* This information has been previously released to the public
 * This information describes public figures, where the data relates to their public roles or other non-sensitive subjects
 * A sufficient length of time has passed since the collection of the information so that the data can be considered "historic"
 * All identified or identifiable subjects have given explicit informed consent allowing the public release of all of the information in the dataset
