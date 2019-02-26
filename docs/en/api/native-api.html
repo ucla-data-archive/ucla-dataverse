@@ -265,7 +265,7 @@ If <code class="docutils literal notranslate"><span class="pre">$id</span></code
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>POST http://$SERVER/api/dataverses/$id?key=$apiKey
 </pre></div>
 </div>
-<p>Download the <a class="reference download internal" href="../_downloads/dataverse-complete.json" download=""><code class="xref download docutils literal notranslate"><span class="pre">JSON</span> <span class="pre">example</span></code></a> file and modified to create dataverses to suit your needs. The fields <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">alias</span></code>, and <code class="docutils literal notranslate"><span class="pre">dataverseContacts</span></code> are required. The controlled vocabulary for <code class="docutils literal notranslate"><span class="pre">dataverseType</span></code> is</p>
+<p>Download the <a class="reference download internal" download="" href="../_downloads/08c4cb28760f0db0fdf010b73e6751a8/dataverse-complete.json"><code class="xref download docutils literal notranslate"><span class="pre">JSON</span> <span class="pre">example</span></code></a> file and modified to create dataverses to suit your needs. The fields <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">alias</span></code>, and <code class="docutils literal notranslate"><span class="pre">dataverseContacts</span></code> are required. The controlled vocabulary for <code class="docutils literal notranslate"><span class="pre">dataverseType</span></code> is</p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">DEPARTMENT</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">JOURNALS</span></code></li>
@@ -555,7 +555,7 @@ values are <code class="docutils literal notranslate"><span class="pre">true</sp
 <h3><a class="toc-backref" href="#id42">Update Metadata For a Dataset</a><a class="headerlink" href="#update-metadata-for-a-dataset" title="Permalink to this headline">¶</a></h3>
 <p>Updates the metadata for a dataset. If a draft of the dataset already exists, the metadata of that draft is overwritten; otherwise, a new draft is created with this metadata.</p>
 <p>You must download a JSON representation of the dataset, edit the JSON you download, and then send the updated JSON to the Dataverse server.</p>
-<p>For example, after making your edits, your JSON file might look like <a class="reference download internal" href="../_downloads/dataset-update-metadata.json" download=""><code class="xref download docutils literal notranslate"><span class="pre">dataset-update-metadata.json</span></code></a> which you would send to Dataverse like this:</p>
+<p>For example, after making your edits, your JSON file might look like <a class="reference download internal" download="" href="../_downloads/b551a37a65559ac73c36e34378598ae0/dataset-update-metadata.json"><code class="xref download docutils literal notranslate"><span class="pre">dataset-update-metadata.json</span></code></a> which you would send to Dataverse like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>curl -H &quot;X-Dataverse-key: $API_TOKEN&quot; -X PUT $SERVER_URL/api/datasets/:persistentId/versions/:draft?persistentId=$PID --upload-file dataset-update-metadata.json
 </pre></div>
 </div>
@@ -579,7 +579,7 @@ values are <code class="docutils literal notranslate"><span class="pre">true</sp
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>curl -H &quot;X-Dataverse-key: $API_TOKEN&quot; -X PUT $SERVER_URL/api/datasets/:persistentId/editMetadata?persistentId=$PID&amp;replace=true --upload-file dataset-update-metadata.json
 </pre></div>
 </div>
-<p>For these edits your JSON file need only include those dataset fields which you would like to edit. A sample JSON file may be downloaded here: <a class="reference download internal" href="../_downloads/dataset-edit-metadata-sample.json" download=""><code class="xref download docutils literal notranslate"><span class="pre">dataset-edit-metadata-sample.json</span></code></a></p>
+<p>For these edits your JSON file need only include those dataset fields which you would like to edit. A sample JSON file may be downloaded here: <a class="reference download internal" download="" href="../_downloads/1b5aa6d361363a9fcc5ca2e24aa6e1f5/dataset-edit-metadata-sample.json"><code class="xref download docutils literal notranslate"><span class="pre">dataset-edit-metadata-sample.json</span></code></a></p>
 </div>
 <div class="section" id="delete-dataset-metadata">
 <h3><a class="toc-backref" href="#id44">Delete Dataset Metadata</a><a class="headerlink" href="#delete-dataset-metadata" title="Permalink to this headline">¶</a></h3>
@@ -587,7 +587,7 @@ values are <code class="docutils literal notranslate"><span class="pre">true</sp
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>curl -H &quot;X-Dataverse-key: $API_TOKEN&quot; -X PUT $SERVER_URL/api/datasets/:persistentId/deleteMetadata/?persistentId=$PID --upload-file dataset-delete-author-metadata.json
 </pre></div>
 </div>
-<p>For these deletes your JSON file must include an exact match of those dataset fields which you would like to delete. A sample JSON file may be downloaded here: <a class="reference download internal" href="../_downloads/dataset-delete-author-metadata.json" download=""><code class="xref download docutils literal notranslate"><span class="pre">dataset-delete-author-metadata.json</span></code></a></p>
+<p>For these deletes your JSON file must include an exact match of those dataset fields which you would like to delete. A sample JSON file may be downloaded here: <a class="reference download internal" download="" href="../_downloads/4307699499e7653d85093f274a90f592/dataset-delete-author-metadata.json"><code class="xref download docutils literal notranslate"><span class="pre">dataset-delete-author-metadata.json</span></code></a></p>
 </div>
 <div class="section" id="publish-a-dataset">
 <h3><a class="toc-backref" href="#id45">Publish a Dataset</a><a class="headerlink" href="#publish-a-dataset" title="Permalink to this headline">¶</a></h3>
@@ -768,7 +768,7 @@ Note that the dataset field used has to be a date field:</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>In the example below, the curator has saved the JSON file as <a class="reference download internal" href="../_downloads/reason-for-return.json" download=""><code class="xref download docutils literal notranslate"><span class="pre">reason-for-return.json</span></code></a> in their current working directory. Then, the curator sends this JSON file to the <code class="docutils literal notranslate"><span class="pre">returnToAuthor</span></code> API endpoint like this:</p>
+<p>In the example below, the curator has saved the JSON file as <a class="reference download internal" download="" href="../_downloads/1fcd5f0fc7b6e33913c518983dd4ea5b/reason-for-return.json"><code class="xref download docutils literal notranslate"><span class="pre">reason-for-return.json</span></code></a> in their current working directory. Then, the curator sends this JSON file to the <code class="docutils literal notranslate"><span class="pre">returnToAuthor</span></code> API endpoint like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;Content-type:application/json&quot;</span> <span class="o">-</span><span class="n">d</span> <span class="nd">@reason</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="k">return</span><span class="o">.</span><span class="n">json</span> <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;X-Dataverse-key: $API_TOKEN&quot;</span> <span class="o">-</span><span class="n">X</span> <span class="n">POST</span> <span class="s2">&quot;$SERVER_URL/api/datasets/:persistentId/returnToAuthor?persistentId=$DOI_OR_HANDLE_OF_DATASET&quot;</span>
 </pre></div>
 </div>
@@ -992,7 +992,7 @@ Note that the dataset field used has to be a date field:</p>
 <div class="section" id="create-a-builtin-user">
 <h3><a class="toc-backref" href="#id67">Create a Builtin User</a><a class="headerlink" href="#create-a-builtin-user" title="Permalink to this headline">¶</a></h3>
 <p>For security reasons, builtin users cannot be created via API unless the team who runs the Dataverse installation has populated a database setting called <code class="docutils literal notranslate"><span class="pre">BuiltinUsers.KEY</span></code>, which is described under “Securing Your Installation” and “Database Settings” in the <span class="xref std std-doc">/installation/config</span> section of the Installation Guide. You will need to know the value of <code class="docutils literal notranslate"><span class="pre">BuiltinUsers.KEY</span></code> before you can proceed.</p>
-<p>To create a builtin user via API, you must first construct a JSON document.  You can download <a class="reference download internal" href="../_downloads/user-add.json" download=""><code class="xref download docutils literal notranslate"><span class="pre">user-add.json</span></code></a> or copy the text below as a starting point and edit as necessary.</p>
+<p>To create a builtin user via API, you must first construct a JSON document.  You can download <a class="reference download internal" download="" href="../_downloads/ce17d8d12f1da014dcdd4907f9a9f728/user-add.json"><code class="xref download docutils literal notranslate"><span class="pre">user-add.json</span></code></a> or copy the text below as a starting point and edit as necessary.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="s2">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Lisa&quot;</span><span class="p">,</span>
   <span class="s2">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Simpson&quot;</span><span class="p">,</span>
@@ -1555,9 +1555,9 @@ Sample <code class="docutils literal notranslate"><span class="pre">json</span><
       
     </p>
     <p>
-        &copy; Copyright 2018, UC Regents.<br/>
-      Last updated on Nov 15, 2018.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.8.<br/>
+        &copy; Copyright 2019, UC Regents.<br/>
+      Last updated on Feb 26, 2019.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.<br/>
     </p>
   </div>
 </footer>

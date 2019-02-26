@@ -101,7 +101,9 @@ As an alternative, users may draft a Custom Data Usage License Agreement. By cho
 * Nothing in the Custom Data Usage License Agreement conflicts with, supersedes, or limits, in whole or in part, any prior contractual obligations on the part of the User, any third parties, downloaders, the Site, or DSC.
 
 3. Data Use Agreement
+
 As another alternative, users may choose to use Harvard Dataverse’s restricted data usage license agreement (“Data Use Agreement”). By choosing to use this Data Use Agreement, users acknowledge and agree that:
+
 * DSC owes no obligation or responsibility and makes no representations with regards to the legality, enforceability, accuracy, or desirability of the Data Use Agreement;
 * DSC is not a party to the Data Use Agreement and cannot be held responsible for the substance, sufficiency, or effectiveness of any terms found within the Data Use Agreement; and
 * DSC has no obligation to aid or support either party to the Data Use Agreement in the execution or enforcement of the Data Use Agreement’s terms.
@@ -113,6 +115,7 @@ Downloading User Submissions
 
 The Site represents that it will use reasonable efforts to maintain open access to datasets for users to download, subject to Depositors’ restrictions and any applicable legal restrictions. The Site collects and stores Download Data from each download for all users (both registered and guest), which can then be downloaded and accessed by the Depositor. Downloaders must be registered users of the Site or guests that agree to the CC0 waiver or a Custom Data Usage License Agreement for a dataset in order to take advantage of the Site’s Services, including downloading any materials or datasets.
 Downloaders represent that, in downloading any material from the Site, they:
+
 * have read and understood the Site’s Community Norms (http://best-practices.dataverse.org/harvard-policies/community-norms.html);
 * will abide by the applicable data usage license agreement attached to the dataset;
 * acknowledge that their account information (for users) or temporary site identification information (for guests) may be recorded upon download, which can then be viewed by the owner of the datasets or other materials uploaded by a user; and
